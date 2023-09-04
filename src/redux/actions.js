@@ -12,7 +12,7 @@ export const GET_COUNTRY_BY_ID = 'GET_COUNTRY_BY_ID';
 
 export const getCountries = () => {
     return async (dispatch) => {
-        const response = await axios.get('http://localhost:3001/countries');
+        const response = await axios.get('/countries');
         const { data } = response;
         return dispatch({
             type: 'GET_COUNTRIES',
@@ -23,7 +23,7 @@ export const getCountries = () => {
 
 export const getCountriesByName = (value) => {
     return async (dispatch) => {
-        const response = await axios.get(`http://localhost:3001/countries/name?country=${value}`);
+        const response = await axios.get(`/countries/name?country=${value}`);
         const { data } = response;
         return dispatch({
             type: 'GET_COUNTRIES_BY_NAME',
@@ -34,7 +34,7 @@ export const getCountriesByName = (value) => {
 
 export const postActivities = (activitie) => {
     return async (dispatch) => {
-        const response = await axios.post('http://localhost:3001/activities', activitie);
+        const response = await axios.post('/activities', activitie);
         const { data } = response;
         return dispatch({
             type: 'POST_ACTIVITIES',
@@ -59,7 +59,7 @@ export const orderCountries = (order) => {
 
 export const getActivities = () => {
     return async (dispatch) => {
-        const response = await axios.get('http://localhost:3001/activities');
+        const response = await axios.get('/activities');
         const { data } = response;
         return dispatch({
             type: GET_ACTIVITIES,
@@ -77,7 +77,7 @@ export const filterByActivitie = (activitie) => {
 
 export const deleteActivityById = (idActivity, idPais) => {
     return async (dispatch) => {
-        const response = await axios.delete(`http://localhost:3001/countries/${idPais}/${idActivity}`);
+        const response = await axios.delete(`/countries/${idPais}/${idActivity}`);
         const { data } = response;
         return dispatch({
             type: DELETE_ACTIVITY_BY_ID,
@@ -88,7 +88,7 @@ export const deleteActivityById = (idActivity, idPais) => {
 
 export const getCountryById = (id) => {
     return async (dispatch) => {
-        const response = await axios.get(`http://localhost:3001/countries/${id}`);
+        const response = await axios.get(`/countries/${id}`);
         const { data } = response;
         return dispatch({
             type: GET_COUNTRY_BY_ID,
