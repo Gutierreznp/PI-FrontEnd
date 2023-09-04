@@ -1,0 +1,62 @@
+.containernav {
+  position: relative;
+}
+
+.navbar {
+    background-color: rgba(73, 65, 55, 0.69);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    gap: 20px;
+  }
+
+  .img {
+    position: absolute;
+    top: 50%;
+    left: 0.5%;
+    width: 100px;
+    height: 100px;
+  }
+
+  .link {
+    height: 2.5rem;
+    width: 4rem;
+    background-color: burlywood;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
+  }
+
+  .link1 {
+    text-decoration: inherit;
+    color: rgb(74, 45, 7);
+  }
+
+  .link:hover {
+    background-color: rgba(187, 155, 113, 0.717);
+  }
+
+  .title {
+    color: burlywood;
+    text-shadow: 0 2px 2px rgba(187, 155, 113, 0.717);
+  }
+  .button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+
+  .input {
+    padding: 3px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    margin-right: 5px;
+  }
