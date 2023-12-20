@@ -22,7 +22,6 @@ export default function Form () {
 
     const handleChange = (event) => {
         const {name, value} = event.target;
-        // const newValue = name === 'duration' || name === 'difficulty' ? parseFloat(value) : value;
         let newValue = value;
 
         if (name === 'name') {
